@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./multimedia/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Productos</title>
+</head>
+<body>
+    <!-- navbar inicia -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">La Perla</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link active" href="./productos.html">Productos</a>
+              <a class="nav-link active" href="./contacto.html">Contacto</a>
+              <a class="nav-link active" href="./equipo.html">Equipo - API</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar finaliza -->
+
+      <div class="lista-productos">
+        <h1>Lista de Productos</h1>
+
+        <!-- botón para filtrar por precio -->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Filtrar por precio
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#" id="filtrarAscendente">De menor a mayor</a></li>
+            <li><a class="dropdown-item" href="#" id="filtrarDescendente">De mayor a menor</a></li>
+          </ul>
+        </div>
+
+        <div id="productos"></div>
+      </div>
+
+    <div class="cart">
+      <h3>Carrito de Compra</h3>
+      <div id="carrito"></div>
+      <p id="total"></p>
+    </div>
+    
+    <div id="accionesCarrito">
+      <button id="finalizarCompra">Finalizar Compra</button>
+      <button id="vaciarCarrito">Vaciar Carrito</button>
+    </div>
+  
+
+    <!-- footer inicia -->
+    <footer>
+      <p>&copy; 2024 La Perla Productos Regionales. Todos los derechos reservados.</p>
+          <div class="redes">
+              <a href="https://www.facebook.com/">
+                  <i class="fa-brands fa-square-facebook"></i>
+              </a>
+  
+              <a href="https://www.instagram.com/productosregionaleslaperla/">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+      </div>
+    </footer>
+    <!-- footer finaliza -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/equipo.js"></script>
+</body>
+</html>
